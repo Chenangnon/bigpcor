@@ -1,0 +1,25 @@
+Package: bigpcor
+Type: Package
+Title: Partial Correlations | Large Conditioning Set
+Version: 0.1.0
+Authors@R: 
+  c(person("Chenangnon", "Tovissode", , "ctovissode@uidaho.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3685-3043")))
+Maintainer: Chenangnon Tovissode <chenangnon@gmail.com>
+Description:  Calculate sample estimates and test partial correlations conditioning on a large set of variables.
+    The package takes advantage of linear algebra to reduce the number of actual covariance matrix inversions required to compute pairwise partial correlations given a large set of variables to condition on.
+License: GPL (>= 3)
+Depends: 
+  R (>= 4.0.0)
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RdMacros: Rdpack
+Imports: Rdpack,
+    methods,
+    parallel,
+    propagate
+Suggests: ppcor
+Date: 2023-07-13
+RoxygenNote: 7.2.3
