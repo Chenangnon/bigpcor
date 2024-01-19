@@ -1,21 +1,17 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+# bigpcor
+The package `bigpcor` is a `R` library for a fast computation of partial correlations conditioning on a large set of confounders.
 
-# MRGN
-
-<img src="C:/Users/Bruin/Desktop/Research Assistantship/MRGN_logo/MRGN-logos.png" width="100%" />
-<!-- badges: start --> <!-- badges: end -->
-
-The goal of MRGN is to …
+The library takes advantage of linear algebra to reduce the number of actual covariance matrix inversions required to compute pairwise partial correlations given a large set of variables to condition on.
 
 ## Installation
 
-You can install the development version of MRGN from
+You can install the development version of bigpcor from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("Jarred6068/MRGN")
+devtools::install_github("Chenangnon/bigpcor")
 ```
 
 ## Example
@@ -23,9 +19,6 @@ devtools::install_github("Jarred6068/MRGN")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(MRGN)
+library(bigpcor)
 ## basic example code
 ```
-
-<!-- What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so: -->
-<!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>. -->
