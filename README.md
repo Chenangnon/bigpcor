@@ -55,9 +55,11 @@ Library 'ppcor' is required to run the remaining of the example
 
 #* Comparing 'bigpcor' with a repeated call to 'pcor' of library "ppcor"
 # Install 'ppcor' if not installed
+```r
 if (!"ppcor" %in% rownames(installed.packages()))
   install.packages('ppcor', dependencies = TRUE)
 require(ppcor)
+```
 
 Define a function to disable the display of warnings from 'ppcor::pcor'. This is Martin Maechler's 'tryCatch.W.E' which catches and saves both errors and warnings, and in the case of a warning, also keeps the computed result.
 ```r
