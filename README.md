@@ -1,8 +1,10 @@
 
-# bigpcor
+## bigpcor
 The package `bigpcor` is a `R` library for a fast computation of partial correlations conditioning on a large set of confounders.
 
 The library takes advantage of linear algebra to reduce the number of actual covariance matrix inversions required to compute pairwise partial correlations given a large set of variables to condition on.
+
+The library depends on R packages: `Rdpack`, `methods`, `parallel`, and `propagate`.
 
 ## Installation
 
