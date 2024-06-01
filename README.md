@@ -77,7 +77,7 @@ catch.conditions <- function (expr) {
 ```
 
 #* Use the 'pcor' function of library "ppcor"
-The following took about 5 seconds on a MAC OS Ventura 13.4.1 system with 16 GB RAM
+The following took about 428 seconds on a MAC OS Ventura 13.4.1 system with 16 GB RAM
 ```r
 W.E. <- catch.conditions({
   Time0 <- system.time({
