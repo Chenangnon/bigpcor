@@ -110,5 +110,5 @@ sum(round(res, 10) != round(res0, 10)) # zero means no difference
 
 ```r
 Time0
-Time0[3]/Time[3] # 'bigpcor' is about four fold faster than 'ppcor' in this example
+Time0[3]/Time[3] # 'bigpcor' is about 190 fold faster than 'ppcor' in this example
 ```
